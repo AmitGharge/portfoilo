@@ -15,13 +15,26 @@
     font-size: 0.875rem;
     a {
       display: flex;
-      justify-content: center;
-      flex-direction: column;
+      justify-content: space-between;
       align-items: center;
-      width: 110px;
+      width: 100px;
+      height: 32px;
       background-color: #e7e7e7;
       border-radius: 25px;
       text-decoration: none;
+      color: inherit;
+      padding-left: 15px;
+      transition: transform 0.3s ease;
+      i {
+        height: 22px;
+        width: 22px;
+        border-radius: 25px;
+        background-color: black;
+        margin-right: 5px;
+      }
+    }
+    a:hover {
+      transform: rotate(-5deg);
     }
     span {
       display: flex;
@@ -34,8 +47,12 @@
   }
   div:first-child {
     gap: 10px;
+    transition: transform 0.3s ease;
     span:last-child {
       color: rgb(118, 118, 118);
     }
+  }
+  div:first-child:hover {
+    transform: rotate(-5deg);
   }
 }
