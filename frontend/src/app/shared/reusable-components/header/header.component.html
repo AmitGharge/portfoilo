@@ -1,16 +1,19 @@
-<div class="header">
-  <div>
-    <span>Amit</span>
+<div class="flex justify-between w-screen z-10">
+  <div
+    class="flex justify-center align-middle gap-3 m-4 font-sans text-xl md:text-2xl lg:text-4xl"
+  >
+    <span class="text-gray-400">Amit</span>
     <span>Gharge</span>
   </div>
-  <div>
-    <a routerLink="/">
-      Home
-      <i></i>
-    </a>
-    <a routerLink="/contact">
+  <div class="flex justify- gap-4 m-4">
+    <a
+      class="flex justify-between bg-slate-200 p-1 rounded-full w-24 h-8 transition-transform duration-300 ease-in-out hover:-rotate-6"
+    >
       Contact
-      <i></i>
+      <i class="h-6 w-6 bg-black rounded-full"></i>
+    </a>
+    <a class="h-8 w-8 bg-slate-200 p-1 rounded-full">
+      <i class="icon-menu"></i>
     </a>
   </div>
 </div>
